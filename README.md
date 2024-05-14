@@ -2,7 +2,7 @@
 
 ## Descrição
 
-Gerenciamento de atendimentos e previsão de receita para fisioterapeutas anônimos.
+Gerenciamento de atendimentos e previsão de receita para fisioterapeutas autônomos.
 
 ### Tecnologias
 
