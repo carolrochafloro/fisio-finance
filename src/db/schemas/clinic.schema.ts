@@ -6,6 +6,7 @@ import {
 import { Decimal128, ObjectId } from 'mongodb';
 import * as mongoose from 'mongoose';
 import { User } from './user.schema';
+import { Appointment } from './appointment.schema';
 
 export type UserDocument =
   mongoose.HydratedDocument<Clinic>;
@@ -41,12 +42,8 @@ export class Clinic {
   @Prop({ required: true })
   is_active: boolean;
 
-  @Prop()
-  appointments: [
-    {
-      // populate
-    },
-  ];
+  @Prop([Appointment])
+  appointments: [Appointment[]];
 }
 
 export const ClinicSchema =
